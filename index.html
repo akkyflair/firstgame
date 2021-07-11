@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "utf-8" />
+    <title>DXOpal game</title>
+    <script type="text/javascript" src="dxopal.min.js"></script>
+    <script type="text/ruby">
+      DXOpal.dump_error{ require_remote "main.rb?#{Time.now}" }
+    </script>
+  </head>
+  
+  <body>
+    <canvas id="dxopal-canvas"></canvas>
+    <div id="dxopal-errors"></div>
+    <div class="bottom-content">
+      掃除機が大嫌いな私の家の猫を主人公にしたゲーム
+      <ul class="lists"></ul>
+        <li class="list">キーボード左右の操作のみ</li>
+        <li class="list">ネズミ退治でスコア＋10</li>
+        <li class="list">ルンバ衝突でスコア0にリセット</li>
+        <li class="list">鳴き声が微妙に変わります</li>
+      </ul>
+    </div>
+  </body>
+</html>
